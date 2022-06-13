@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    </head>
+    <body>
+      <section>
+      <h1 id="title"> Survey Form</h1>
+      <p id="description">Help us make things better for everyone.</p>
+      </section>
+      <form id="survey-form" action="submit">
+        <fieldset>
+          <label id="name-label">
+            <p>Name:</p> <input id="name" type="text" required placeholder="John Doe">
+            </label>
+            </fieldset>
+            <fieldset>
+            <label id="email-label"><p>Email:</p> <input type="email" required id="email" placeholder="johndoe@anonymous.com">
+            </label>
+            </fieldset>
+            <fieldset>
+              <label id="number-label">
+                <p>Mobile:
+                  </p> 
+                  <p class="garda">(optional)</p>
+                  <input type="number" id="number" pattern="[0-9]{3}" min="0000000000" max="9999999999" placeholder="9999999999">
+                </label>
+              </fieldset>
+              <p> For what purpose you use freeCodeCamp?</p>
+              <select id="dropdown">
+                <option disabled>Select an option</option>
+                <option>Learning new skills</option>
+                <option>Revising old topics</option>
+                <option>Portfolio populating</option>
+                <option>Keep in track with the curriculum</option>
+                </select>
+                <p> How likely are you to recommend freeCodeCamp?</p>
+                Certainly<input type="radio" name="butt" value="1">
+                Probably<input type="radio" name="butt" value="2">
+                Not Likely<input type="radio" name="butt" value="3">
+                <p>Do you agree with our terms and conditions?</p>
+              <input type="checkbox" name="yes-no" value="1">
+              Yes
+<p>Things you'd love to see improve.</p>
+<input type="checkbox" value="appearance"> appearance
+<input type="checkbox" value="questions"> questions
+<input type="checkbox" value="project">
+projects.
+<p>Something on your mind?</p>
+<textarea rows="4" cols="50">
+  </textarea>
+  <button type="submit" id="submit"><p>Submit</p></button>
+              
+          
+        </form>
+
+
+      </body>
+  </html>
